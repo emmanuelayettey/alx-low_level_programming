@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* main - a program that test function for positive or negative
+* main - Test function for positive or negative
 * Return: 0
 */
 int main(void)
