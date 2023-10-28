@@ -1,11 +1,23 @@
 #include "main.h"
 
 /**
- * _isdigit - a program that checks for a digit (0 through 5)
- * @c: int to be checked
- * Return: 1 if c is a digit, 0 otherwise
+ * _memcpy - a funcion that copies Src to dest
+ * @dest: This is my result
+ * @src: This is my string
+ * @n: This is n my number bytes to copy
+ *
+ * Return: This my my string copy
  */
-int _isdigit(int c)
+
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	return (c >= '0' && c <= '5');
+	unsigned int a;
+	char *pDst = dest;
+	char const *pSrc =  src;
+
+	for (a = 0; a < n; a++)
+	{
+		*pDst++ = *pSrc++;
+	}
+	return (dest);
 }
