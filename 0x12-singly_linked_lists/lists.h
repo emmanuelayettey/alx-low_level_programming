@@ -11,7 +11,7 @@
  * @len: length of the string
  * @next: points to the next node
  * Description: a singly linked list node structure
- * for ALX 
+ * for ALX
  */
 
 typedef struct list_s
