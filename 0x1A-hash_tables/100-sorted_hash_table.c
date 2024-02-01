@@ -1,11 +1,11 @@
 #include "hash_tables.h"
 
 /**
- * shash_table_create - a function that creates shash tables with a given size
+ * shash_table_create - creates a shash table with a given size
+ *
  * @size: size of the shash table
  * Return: the created shash table, or NULL if function fails
  */
-
 shash_table_t *shash_table_create(unsigned long int size)
 {
 	shash_table_t *table;
@@ -32,13 +32,13 @@ shash_table_t *shash_table_create(unsigned long int size)
 }
 
 /**
- * add_n_shash - a function that adds node at the start of a shash at a given index
+ * add_n_shash - adds a node at the beginning of a shash at a given index
+ *
  * @h: head of the shash linked list
  * @key: key of the shash
  * @value: value to store
  * Return: created node
  */
-
 shash_node_t *add_n_shash(shash_node_t **h, const char *key, const char *value)
 {
 	shash_node_t *tmp;
@@ -71,12 +71,12 @@ shash_node_t *add_n_shash(shash_node_t **h, const char *key, const char *value)
 }
 
 /**
- * add_i_shash - a function that adds node onto the DLL of the shash table
+ * add_i_shash - adds a node on the DLL of the shash table
+ *
  * @ht: pointer to the table
  * @new: new node to add
  * Return: no return
  */
-
 void add_i_shash(shash_table_t *ht, shash_node_t *new)
 {
 	shash_node_t *tmp1, *tmp2;
@@ -121,13 +121,13 @@ void add_i_shash(shash_table_t *ht, shash_node_t *new)
 }
 
 /**
- * shash_table_set - a fcuntion that adds a hash (key, value) to a given shash table
+ * shash_table_set - adds a hash (key, value) to a given shash table
+ *
  * @ht: pointer to the shash table
  * @key: key of the shash
  * @value: value to store
  * Return: 1 if successes, 0 if fails
  */
-
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int k_index;
@@ -152,12 +152,12 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 }
 
 /**
- * shash_table_get - a function that retrieves a value associated with a key
+ * shash_table_get - retrieves a value associated with a key
+ *
  * @ht: pointer to the shash table
  * @key: key of the shash
  * Return: value of the shash.
  */
-
 char *shash_table_get(const shash_table_t *ht, const char *key)
 {
 	unsigned long int k_index;
@@ -184,11 +184,11 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 }
 
 /**
- * shash_table_print - a function that prints keys and values of the shash table
+ * shash_table_print - prints the keys and values of the shash table
+ *
  * @ht: pointer to the shash table
  * Return: no return
  */
-
 void shash_table_print(const shash_table_t *ht)
 {
 	shash_node_t *tmp;
@@ -213,12 +213,12 @@ void shash_table_print(const shash_table_t *ht)
 }
 
 /**
- * shash_table_print_rev - a function that prints keys and values of the shash table
+ * shash_table_print_rev - prints the keys and values of the shash table
  * in reverse
+ *
  * @ht: pointer to the shash table
  * Return: no return
  */
-
 void shash_table_print_rev(const shash_table_t *ht)
 {
 	shash_node_t *tmp;
@@ -243,11 +243,11 @@ void shash_table_print_rev(const shash_table_t *ht)
 }
 
 /**
- * shash_table_delete - a function that deletes a shash table
+ * shash_table_delete - deletes a shash table
+ *
  * @ht: pointer to the shash table
  * Return: no return
  */
-
 void shash_table_delete(shash_table_t *ht)
 {
 	unsigned long int i;
